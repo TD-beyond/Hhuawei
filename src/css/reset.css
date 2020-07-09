@@ -1,0 +1,83 @@
+@charset "utf-8";
+html,body,h1,h2,h3,h4,h5,h6,img,p,dl,dt,dd,ul,ol,li,input,form,fieldset,legend{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+ul,ol,li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+em,i{
+    font-style: normal;
+}
+a,u{
+    text-decoration: none;
+}
+b,strong{
+    font-weight: normal;
+}
+input{
+    outline: none;
+    border: none;
+}
+fieldset{
+    border: none;
+}
+textarea{
+    resize: none;
+}
+/* 封装类 */
+.border_none{
+    border: none!important;
+}
+.bg_none{
+    background: none!important;
+}
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+/* 单行文本溢出省略号显示 */
+.text_ellipisis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* 窗口居中 */
+.fixed_center{
+    position: fixed;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin: auto;
+}
+/* 父元素内居中 */
+.dom_center{
+    position: absolute;
+    left: 0;right: 0;
+    top:0;bottom: 0;
+    margin: auto;
+}
+/* 万能清除法 */
+.clear_fix::after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clear_fix{
+    zoom: 1;
+}

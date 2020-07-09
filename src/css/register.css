@@ -1,0 +1,15 @@
+@charset "utf-8";
+.account_box button{
+    margin-top: 40px;
+    background: #CA141D;
+    opacity: .38;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    border-radius: 8px;
+    width: 358px;
+    height: 48px;
+    margin-bottom: 26px;
+    border: 0;
+}
